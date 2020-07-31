@@ -1,0 +1,640 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml"
+      xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+
+  <title></title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <!--[if !mso]><!-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <!--<![endif]-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="address=no">
+  <meta name="format-detection" content="date=no">
+  <meta name="format-detection" content="email=no">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="x-apple-disable-message-reformatting">
+
+</head>
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0"
+      style="background-color: white; margin:0 auto;">
+
+<!-- Fix DPI Scaling Issues in Outlook -->
+<!--[if gte mso 9]>
+<xml>
+  <o:OfficeDocumentSettings>
+    <o:AllowPNG/>
+    <o:PixelsPerInch>96</o:PixelsPerInch>
+  </o:OfficeDocumentSettings>
+</xml>
+<![endif]-->
+
+<style>
+
+  body {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    font-size: 12px;
+    background-color: #ffffff;
+    line-height-rule: exactly;
+    mso-line-height-rule: exactly;
+    color: #000000;
+  }
+
+  /* Load Google fonts through @media screen so Outlook 2007/2010/2013/2016 doesn't default to Times New Roman. Litmus uses @font-face with their newsletters too! */
+  @media screen {
+
+    @font-face {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 100;
+      font-display: swap;
+      src: local('Montserrat'), local('Montserrat-Regular'), url(https://fonts.googleapis.com/css2?family=Montserrat) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+
+
+
+    @font-face {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 100;
+      font-display: swap;
+      src: local('Montserrat Medium'), local('Montserrat-Medium'), url(https://fonts.googleapis.com/css2?family=Montserrat) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+
+  }
+
+  /* Typography Setup + Desktop Sizes */
+  h1 {
+    font-family: Montserrat, Helvetica, Arial, sans-serif;
+    font-weight: 100;
+    line-height: normal;
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
+
+  strong, b {
+    font-weight: 500;
+  }
+
+  td, p, span {
+    font-family: Montserrat, Helvetica, Arial, sans-serif;
+    font-weight: 100;
+    line-height: 1.1rem;
+    letter-spacing: normal;
+    color: #000000;
+    margin: 0;
+  }
+
+  .bold-text {
+    font-weight: 500;
+  }
+
+  /* Mobile */
+  @media only screen and (max-width: 580px) {
+
+    p {
+      font-size: 12px;
+    }
+
+  }
+
+</style>
+
+<!-- For reference, here's all the Outlook versions and the mso to use
+Outlook 2000 = mso 9
+Outlook 2002 = mso 10
+Outlook 2003 = mso 11
+Outlook 2007 = mso 12
+Outlook 2010 = mso 14
+Outlook 2013 = mso 15
+Outlook 2016 = mso 16
+-->
+
+<!-- Outlook 2007–2016 doesn't support font-face, use web safe fonts instead. Outlook 2000–2003 does support font-face, so we don't need to target those -->
+
+<!--[if (mso 12) | (mso 14) | (mso 15) | (mso 16) ]>
+<style>
+  h1 {
+    font-family: Montserrat ,Helvetica, Arial, sans-serif;
+    font-weight: normal;
+  }
+
+  td, p, span {
+    font-family: Montserrat ,Helvetica, Arial, sans-serif;
+    font-weight: normal;
+  }
+
+  strong, b {
+    font-weight: bold;
+  }
+</style>
+<![endif]-->
+
+<table width="580px" border="0" cellpadding="0" cellspacing="0" style="mso-cellspacing: 0px;">
+  <tr>
+    <td colspan="1" valign="top" align="left"
+        style="padding: 35px 25px 20px 0; mso-padding-alt: 35px 25px 20px 0; position: relative;">
+
+      <div style="width: 100%; display: block;">
+        <img border="0" src="https://cdn.kiuglobal.com/assets/img/mail/saas-template/logo-email.png"
+             style="width: 65px; height: 30px; border: none; display: block;">
+      </div>
+
+    </td>
+  </tr>
+  <tr>
+    <td colspan="1" valign="top" align="center"
+        style="padding: 0 0 40px 0; mso-padding-alt: 0 0 40px 0; position: relative;">
+
+      <div style="width: 100%; display: block;">
+        <img border="0" src="https://cdn.kiuglobal.com/assets/img/mail/saas-template/4.png"
+             style="width: 500px;  border: none; display: block;">
+      </div>
+
+    </td>
+  </tr>
+  <tr>
+    <td style="width: 100%; padding: 0 0 30px 0; mso-padding-alt: 0 0 30px 0;">
+      <div style="font-size: 16px; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0;">
+        Dear [Customer Name],
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td style="width: 100%; padding: 0 0 40px 0; mso-padding-alt: 0 0 40px 0;">
+      <div style="font-size: 12px; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0;">
+        Your Kiu free trial account will expire on (insert date). We hope you are happy with our product and enjoying
+        its benefits. Don't worry, you still have 2 days left in your free trial account. But after this period, your
+        account including all data in the system will be deleted.
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td style="width: 100%; padding: 0 0 20px 0; mso-padding-alt: 0 0 20px 0;">
+      <p style="color: #ea4a55; font-size: 16px; font-weight: 400">
+        Need more time?
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td style="width: 100%; padding: 0 0 15px 0; mso-padding-alt: 0 0 15px 0;">
+      <div style="font-size: 12px; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0;">
+        Luckily for you, Kiu is extremely flexible to suit any business needs, and we
+        have thousands of customers raging from micro-enterprises to large corporate clients.
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td style="width: 100%; padding: 0 0 20px 0; mso-padding-alt: 0 0 20px 0;">
+      <div style="font-size: 12px;">
+        Let us help you pick the Kiu Package that is right for you and then try any of
+        our packages risk free for your first month. Select from Basic, Premium and Premium+ packages.
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td width="580">
+      <table width="580" border="0" cellpadding="0" cellspacing="0" style="mso-cellspacing: 0px;">
+        <tr>
+          <td valign="top" align="left" width="16"
+              style="width: 16px; height: 198px; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0;">
+            &nbsp;
+          </td>
+          <td valign="top" align="left" width="172"
+              style="background-color: #f8f8f8; border-radius: 10px; width: 172px; height: 198px; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0;">
+            <table width="172" border="0" cellpadding="0" cellspacing="0" style=" mso-cellspacing: 0px;">
+              <tr>
+                <th colspan="10"
+                    style="padding: 10px 10px 10px 10px; mso-padding-alt: 10px 10px 10px 10px;">
+                  <p style="text-align: center; font-size: 13px; font-weight: 300; color: #ea4a55;">BASIC</p>
+                </th>
+              </tr>
+              <tr style="font-size: 9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
+                <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
+                <td colspan="1" style="line-height: 12px !important;">&#8226;</td>
+                <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
+                <td colspan="7" style="line-height: 12px !important; font-weight: 300;">
+                  10GB Storage/5 User Accounts
+                </td>
+              </tr>
+              <tr style="font-size: 9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
+                <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
+                <td colspan="1" style="line-height: 12px !important;">&#8226;</td>
+                <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
+                <td colspan="7" style="line-height: 12px !important; font-weight: 300;">
+                  Phone, Email, Chat support
+                </td>
+              </tr>
+              <tr style="font-size: 9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
+                <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
+                <td colspan="1" style="line-height: 12px !important;">&#8226;</td>
+                <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
+                <td colspan="7" style="line-height: 12px !important; font-weight: 300;">
+                  Kiu Marketplace Access
+                </td>
+              </tr>
+              <tr style="font-size: 9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
+                <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
+                <td colspan="1" style="line-height: 12px !important;">&#8226;</td>
+                <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
+                <td colspan="7" style="line-height: 12px !important; font-size: 9px; font-weight: 300;">
+                  Accounting
+                </td>
+              </tr>
+              <tr style="font-size: 9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
+                <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
+                <td colspan="1" style="line-height: 12px !important;">&#8226;</td>
+                <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
+                <td colspan="7" style="line-height: 12px !important; font-size: 9px; font-weight: 300;">
+                  Sales/CRM
+                </td>
+              </tr>
+              <tr style="font-size: 9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
+                <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
+                <td colspan="1" style="line-height: 12px !important;">&#8226;</td>
+                <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
+                <td colspan="7" style="line-height: 12px !important; font-size: 9px; font-weight: 300;">
+                  Purchase/Inventory
+                </td>
+              </tr>
+              <tr style="font-size: 9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
+                <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
+                <td colspan="1" style="line-height: 12px !important;">&#8226;</td>
+                <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
+                <td colspan="7" style="line-height: 12px !important; font-size: 9px; font-weight: 300;">
+                  Payroll/Employee
+                </td>
+              </tr>
+            </table>
+            <!--            <p-->
+            <!--              style="text-align: center; font-size: 13px; color: #ea4a55 ; margin: 10px 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0;">-->
+            <!--              BASIC-->
+            <!--            </p>-->
+            <!--            <ul-->
+            <!--              style="text-align: left; font-size: 9px; font-weight: 300; letter-spacing: 0.35px; line-height: 0.8rem; margin: 9px 0 9px 22px !important; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; list-style-type: disc;">-->
+            <!--              <li>10GB Storage/5 User Accounts</li>-->
+            <!--              <li>Phone, Email, Chat support</li>-->
+            <!--              <li>Kiu Marketplace Access</li>-->
+            <!--              <li>Accounting</li>-->
+            <!--              <li>Sales/CRM</li>-->
+            <!--              <li>Purchase/Inventory</li>-->
+            <!--              <li>Payroll/Employee</li>-->
+            <!--            </ul>-->
+          </td>
+          <td colspan="1" valign="top" align="left" width="16"
+              style="width: 16px; height: 198px; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0;">
+            &nbsp;
+          </td>
+          <td colspan="2" valign="top" align="left" width="172"
+              style="background-color: #f8f8f8; border-radius: 10px; width: 172px; height: 198px; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0;">
+            <table width="172" border="0" cellpadding="0" cellspacing="0" style="mso-cellspacing: 0px;">
+              <tr>
+                <th colspan="10"
+                    style="padding: 10px 10px 10px 10px; mso-padding-alt: 10px 10px 10px 10px;">
+                  <p style="text-align: center; font-size: 13px; font-weight: 300; color: #ea4a55;">PREMIUM</p>
+                </th>
+              </tr>
+              <tr style="font-size: 9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
+                <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
+                <td colspan="1" style="line-height: 12px !important;">&#8226;</td>
+                <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
+                <td colspan="7" style="line-height: 12px !important; font-size: 9px; font-weight: 300;">
+                  10GB Storage/5 User Accounts
+                </td>
+              </tr>
+              <tr style="font-size:9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
+                <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
+                <td colspan="1" style="line-height: 12px !important;">&#8226;</td>
+                <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
+                <td colspan="7" style="line-height: 12px !important; font-size: 9px; font-weight: 300;">
+                  Phone, Email, Chat support
+                </td>
+              </tr>
+              <tr style="font-size:9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
+                <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
+                <td colspan="1" style="line-height: 12px !important; ">&#8226;</td>
+                <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
+                <td colspan="7" style="line-height: 12px !important; font-size: 9px; font-weight: 300;">
+                  Kiu Marketplace Access
+                </td>
+              </tr>
+              <tr style="font-size:9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
+                <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
+                <td colspan="1" style="line-height: 12px !important; ">&#8226;</td>
+                <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
+                <td colspan="7" style="line-height: 12px !important; font-size: 9px; font-weight: 300;">
+                  Accounting
+                </td>
+              </tr>
+              <tr style="font-size:9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
+                <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
+                <td colspan="1" style="line-height: 12px !important;">&#8226;</td>
+                <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
+                <td colspan="7" style="line-height: 12px !important; font-size: 9px; font-weight: 300;">
+                  Sales/CRM
+                </td>
+              </tr>
+              <tr style="font-size:9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
+                <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
+                <td colspan="1" style="line-height: 12px !important;">&#8226;</td>
+                <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
+                <td colspan="7" style="line-height: 12px !important; font-size: 9px; font-weight: 300;">
+                  Purchase/Inventory
+                </td>
+              </tr>
+              <tr style="font-size:9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
+                <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
+                <td colspan="1" style="line-height: 12px !important;">&#8226;</td>
+                <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
+                <td colspan="7" style="line-height: 12px !important; font-size: 9px; font-weight: 300;">
+                  Payroll/Employee
+                </td>
+              </tr>
+              <tr style="font-size:9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
+                <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
+                <td colspan="1" style="line-height: 12px !important; ">&#8226;</td>
+                <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
+                <td colspan="7" style="line-height: 12px !important; font-size: 9px; font-weight: 300;">
+                  Point of Sale
+                </td>
+              </tr>
+              <tr style="font-size:9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
+                <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
+                <td colspan="1" style="line-height: 12px !important;">&#8226;</td>
+                <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
+                <td colspan="7" style="line-height: 12px !important; font-size: 9px; font-weight: 300;">
+                  Core HR Management*
+                </td>
+              </tr>
+              <tr style="font-size:9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
+                <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
+                <td colspan="1" style="line-height: 12px !important;">&#8226;</td>
+                <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
+                <td colspan="7" style="line-height: 12px !important; font-size: 9px; font-weight: 300;">
+                  Website with live Chat Support
+                </td>
+              </tr>
+            </table>
+            <!--            <p-->
+            <!--              style="text-align: center; font-size: 13px; color: #ea4a55 ; margin: 10px 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0;">-->
+            <!--              PREMIUM-->
+            <!--            </p>-->
+            <!--            <ul-->
+            <!--              style="text-align: left; font-size: 9px; font-weight: 300; letter-spacing: 0.35px; line-height: 0.8rem; margin: 9px 0 9px 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; list-style-type: disc;">-->
+            <!--              <li style="padding:0 0 0 10px; mso-padding-alt: 0 0 0 10px; list-style:disc inside; mso-special-format:bullet;">20GB Storage/10 User Accounts</li>-->
+            <!--              <li style="padding:0 0 0 10px; mso-padding-alt: 0 0 0 10px; list-style:disc inside; mso-special-format:bullet;">Dedicated concierge support</li>-->
+            <!--              <li style="padding:0 0 0 10px; mso-padding-alt: 0 0 0 10px; list-style:disc inside; mso-special-format:bullet;">Kiu Marketplace Access</li>-->
+            <!--              <li style="padding:0 0 0 10px; mso-padding-alt: 0 0 0 10px; list-style:disc inside; mso-special-format:bullet;">Accounting</li>-->
+            <!--              <li style="padding:0 0 0 10px; mso-padding-alt: 0 0 0 10px; list-style:disc inside; mso-special-format:bullet;">Sales/CRM</li>-->
+            <!--              <li style="padding:0 0 0 10px; mso-padding-alt: 0 0 0 10px; list-style:disc inside; mso-special-format:bullet;">Purchase/Inventory</li>-->
+            <!--              <li style="padding:0 0 0 10px; mso-padding-alt: 0 0 0 10px; list-style:disc inside; mso-special-format:bullet;">Payroll/Employee</li>-->
+            <!--              <li style="padding:0 0 0 10px; mso-padding-alt: 0 0 0 10px; list-style:disc inside; mso-special-format:bullet;">Point of Sale</li>-->
+            <!--              <li style="padding:0 0 0 10px; mso-padding-alt: 0 0 0 10px; list-style:disc inside; mso-special-format:bullet;">Core HR Management*</li>-->
+            <!--              <li style="padding:0 0 0 10px; mso-padding-alt: 0 0 0 10px; list-style:disc inside; mso-special-format:bullet;">Website with live Chat Support</li>-->
+            <!--            </ul>-->
+          </td>
+          <td colspan="1" valign="top" align="left" width="16"
+              style="width: 16px; height: 198px; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0;">
+            &nbsp;
+          </td>
+          <td colspan="2" valign="top" align="left" width="172"
+              style="background-color: #f8f8f8; border-radius: 10px; width: 172px; height: 198px; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0;">
+            <table width="172" border="0" cellpadding="0" cellspacing="0" style="mso-cellspacing: 0px;">
+              <tr>
+                <th colspan="10"
+                    style="padding: 10px 10px 10px 10px; mso-padding-alt: 10px 10px 10px 10px;">
+                  <p style="text-align: center; font-size: 13px; font-weight: 300; color: #ea4a55;">PREMIUM+</p>
+                </th>
+              </tr>
+              <tr style="font-size:9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
+                <td colspan="1" style="mso-line-height-rule:exactly; line-height: 12px !important; width: 10px">&nbsp;</td>
+                <td colspan="1" style="mso-line-height-rule:exactly; line-height: 12px !important;">&#8226;</td>
+                <td colspan="1" style="mso-line-height-rule:exactly; line-height: 12px !important; width: 10px">&nbsp;</td>
+                <td colspan="7" style="mso-line-height-rule:exactly; line-height: 12px !important; font-size: 9px; font-weight: 300;">
+                  10GB Storage/5 User Accounts
+                </td>
+              </tr>
+              <tr style="font-size:9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
+                <td colspan="1" style="mso-line-height-rule:exactly; line-height: 12px !important; width: 10px">&nbsp;</td>
+                <td colspan="1" style="mso-line-height-rule:exactly; line-height: 12px !important;">&#8226;</td>
+                <td colspan="1" style="mso-line-height-rule:exactly; line-height: 12px !important; width: 10px">&nbsp;</td>
+                <td colspan="7" style="mso-line-height-rule:exactly; line-height: 12px !important; font-size: 9px; font-weight: 300;">
+                  Phone, Email, Chat support
+                </td>
+              </tr>
+              <tr style="font-size:9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
+                <td colspan="1" style="mso-line-height-rule:exactly; line-height: 12px !important; width: 10px">&nbsp;</td>
+                <td colspan="1" style="mso-line-height-rule:exactly; line-height: 12px !important;">&#8226;</td>
+                <td colspan="1" style="mso-line-height-rule:exactly; line-height: 12px !important;width: 10px">&nbsp;</td>
+                <td colspan="7" style="mso-line-height-rule:exactly; line-height: 12px !important; font-size: 9px; font-weight: 300;">
+                  Kiu Marketplace Access
+                </td>
+              </tr>
+              <tr style="font-size:9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
+                <td colspan="1" style="mso-line-height-rule:exactly; line-height: 12px !important; width: 10px">&nbsp;</td>
+                <td colspan="1" style="mso-line-height-rule:exactly; line-height: 12px !important;">&#8226;</td>
+                <td colspan="1" style="mso-line-height-rule:exactly; line-height: 12px !important; width: 10px">&nbsp;</td>
+                <td colspan="7" style="mso-line-height-rule:exactly; line-height: 12px !important; font-size: 9px; font-weight: 300;">
+                  Accounting
+                </td>
+              </tr>
+              <tr style="font-size:9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
+                <td colspan="1" style="mso-line-height-rule:exactly; line-height: 12px !important; width: 10px">&nbsp;</td>
+                <td colspan="1" style="mso-line-height-rule:exactly; line-height: 12px !important;">&#8226;</td>
+                <td colspan="1" style="mso-line-height-rule:exactly; line-height: 12px !important; width: 10px">&nbsp;</td>
+                <td colspan="7" style="mso-line-height-rule:exactly; line-height: 12px !important; font-size: 9px; font-weight: 300;">
+                  Sales/CRM
+                </td>
+              </tr>
+              <tr style="font-size:9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
+                <td colspan="1" style="mso-line-height-rule:exactly; line-height: 12px !important; width: 10px">&nbsp;</td>
+                <td colspan="1" style="mso-line-height-rule:exactly; line-height: 12px !important;">&#8226;</td>
+                <td colspan="1" style="mso-line-height-rule:exactly; line-height: 12px !important; width: 10px">&nbsp;</td>
+                <td colspan="7" style="mso-line-height-rule:exactly; line-height: 12px !important; font-size: 9px; font-weight: 300;">
+                  Purchase/Inventory
+                </td>
+              </tr>
+              <tr style="font-size:9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
+                <td colspan="1" style="mso-line-height-rule:exactly; line-height: 12px !important; width: 10px">&nbsp;</td>
+                <td colspan="1" style="mso-line-height-rule:exactly; line-height: 12px !important;">&#8226;</td>
+                <td colspan="1" style="mso-line-height-rule:exactly; line-height: 12px !important; width: 10px">&nbsp;</td>
+                <td colspan="7" style="mso-line-height-rule:exactly; line-height: 12px !important; font-size: 9px; font-weight: 300;">
+                  Payroll/Employee
+                </td>
+              </tr>
+              <tr style="font-size:9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
+                <td colspan="1" style="mso-line-height-rule:exactly; line-height: 12px !important; width: 10px">&nbsp;</td>
+                <td colspan="1" style="mso-line-height-rule:exactly; line-height: 12px !important;">&#8226;</td>
+                <td colspan="1" style="mso-line-height-rule:exactly; line-height: 12px !important; width: 10px">&nbsp;</td>
+                <td colspan="7" style="mso-line-height-rule:exactly; line-height: 12px !important; font-size: 9px; font-weight: 300;">
+                  Point of Sale
+                </td>
+              </tr>
+              <tr style="font-size:9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
+                <td colspan="1" style="mso-line-height-rule:exactly; line-height: 12px !important; width: 10px">&nbsp;</td>
+                <td colspan="1" style="mso-line-height-rule:exactly; line-height: 12px !important;">&#8226;</td>
+                <td colspan="1" style="mso-line-height-rule:exactly; line-height: 12px !important; width: 10px">&nbsp;</td>
+                <td colspan="7" style="mso-line-height-rule:exactly; line-height: 12px !important; font-size: 9px; font-weight: 300;">
+                  Core HR Management*
+                </td>
+              </tr>
+              <tr style="font-size:9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
+                <td colspan="1" style="mso-line-height-rule:exactly; line-height: 12px !important; width: 10px">&nbsp;</td>
+                <td colspan="1" style="mso-line-height-rule:exactly; line-height: 12px !important;">&#8226;</td>
+                <td colspan="1" style="mso-line-height-rule:exactly; line-height: 12px !important; width: 10px">&nbsp;</td>
+                <td colspan="7" style="mso-line-height-rule:exactly; line-height: 12px !important; font-size: 9px; font-weight: 300;">
+                  Website with live Chat Support
+                </td>
+              </tr>
+              <tr style="font-size:9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
+                <td colspan="1" style="mso-line-height-rule:exactly; line-height: 12px !important; width: 10px">&nbsp;</td>
+                <td colspan="1" style="mso-line-height-rule:exactly; line-height: 12px !important;">&#8226;</td>
+                <td colspan="1" style="mso-line-height-rule:exactly; line-height: 12px !important; width: 10px">&nbsp;</td>
+                <td colspan="7" style="mso-line-height-rule:exactly; line-height: 12px !important; font-size: 9px; font-weight: 300;">
+                  Manufacturing
+                </td>
+              </tr>
+              <tr style="font-size:9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
+                <td colspan="1" style="mso-line-height-rule:exactly; line-height: 12px !important; width: 10px">&nbsp;</td>
+                <td colspan="1" style="mso-line-height-rule:exactly; line-height: 12px !important;">&#8226;</td>
+                <td colspan="1" style="mso-line-height-rule:exactly; line-height: 12px !important; width: 10px">&nbsp;</td>
+                <td colspan="7" style="mso-line-height-rule:exactly; line-height: 12px !important; font-size: 9px; font-weight: 300;">
+                  Advanced Project Management
+                </td>
+              </tr>
+            </table>
+            <!--            <p-->
+            <!--              style="text-align: center; font-size: 13px; color: #ea4a55 ; margin: 10px 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0;">-->
+            <!--              PREMIUM+-->
+            <!--            </p>-->
+            <!--            <ul-->
+            <!--              style="text-align: left; font-size: 9px; font-weight: 300; letter-spacing: 0.35px; line-height: 0.8rem; margin: 9px 0 9px 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; list-style-type: disc;">-->
+            <!--              <li style="Margin:0 0 0 10px; list-style-position: outside; mso-special-format:bullet;">20GB Storage/10 User Accounts</li>-->
+            <!--              <li style="Margin:0 0 0 10px; list-style-position: outside; mso-special-format:bullet;">Dedicated concierge support</li>-->
+            <!--              <li style="Margin:0 0 0 10px; list-style-position: outside; mso-special-format:bullet;">Kiu Marketplace Access</li>-->
+            <!--              <li style="Margin:0 0 0 10px; list-style-position: outside; mso-special-format:bullet;">Accounting</li>-->
+            <!--              <li style="Margin:0 0 0 10px; list-style-position: outside; mso-special-format:bullet;">Sales/CRM</li>-->
+            <!--              <li style="Margin:0 0 0 10px; list-style-position: outside; mso-special-format:bullet;">Purchase/Inventory</li>-->
+            <!--              <li style="Margin:0 0 0 10px; list-style-position: outside; mso-special-format:bullet;">Payroll/Employee</li>-->
+            <!--              <li style="Margin:0 0 0 10px; list-style-position: outside; mso-special-format:bullet;">Point of Sale</li>-->
+            <!--              <li style="Margin:0 0 0 10px; list-style-position: outside; mso-special-format:bullet;">Core HR Management*</li>-->
+            <!--              <li style="Margin:0 0 0 10px; list-style-position: outside; mso-special-format:bullet;">Website with live Chat Support</li>-->
+            <!--              <li style="Margin:0 0 0 10px; list-style-position: outside; mso-special-format:bullet;">Manufacturing</li>-->
+            <!--              <li style="Margin:0 0 0 10px; list-style-position: outside; mso-special-format:bullet;">Advanced Project Management</li>-->
+            <!--            </ul>-->
+          </td>
+          <td colspan="1" valign="top" align="left" width="16"
+              style="width: 16px; height: 198px; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0;">
+            &nbsp;
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="1" valign="top" align="right" style="text-align: right; padding: 5px 20px 0 0; mso-padding-alt: 5px 20px 0 0;">
+      <div
+        style="font-size: 9px; font-weight: 300; letter-spacing: normal; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0;">
+        *Core HR Management includes: recruitment, leaves, overtime, advanced employee  
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="1" valign="top" align="center" style="padding: 25px 0 0 0; mso-padding-alt: 25px 0 0 0;">
+
+      <p style="width: 580px; color: #ea4a55; font-size: 12px; font-weight: 300;">
+        You can continue enjoying the benefits of Kiu BMP by selecting the best plan
+        for your business.
+      </p>
+
+    </td>
+  </tr>
+  <tr>
+    <td colspan="1" valign="middle" align="center"
+        style="mso-text-raise: 8px; mso-line-height-rule:exactly; line-height:45px; padding: 25px 210px 20px 210px; mso-padding-alt: 25px 210px 20px 210px;">
+
+      <div style="border-radius: 5px; background-color: #ea4a55; width: 160px; height: 45px;">
+        <a href="#"
+           style="color: #ffffff;font-size: 16px; padding:0 0 0 0; mso-padding-alt: 0 0 0 0; text-align: center; text-decoration: none;">
+          Upgrade now
+        </a>
+      </div>
+
+    </td>
+  </tr>
+  <tr>
+    <td colspan="1" valign="top" align="center" style="padding: 10px 0 12px 0; mso-padding-alt: 10px 0 12px 0;">
+
+      <div style="width: 580px; mso-padding-alt: 0 0 0 0; display: block;">
+        <hr style="width: 100%; content: ''; border-bottom: 1px solid #c8c8c8; opacity: 0.5;"/>
+      </div>
+
+    </td>
+  </tr>
+  <tr>
+    <td colspan="1" valign="top" align="center"
+        style="padding: 10px 210px 10px 210px; mso-padding-alt: 10px 210px 10px 210px;">
+
+      <div style="max-width: 142px; max-height: 40px; mso-padding-alt: 0 0 0 0; display: block;">
+        <img border="0" src="https://cdn.kiuglobal.com/assets/img/mail/saas-template/kiu-loan.png"
+             style="width: 142px; height: 40px; border: none; display: block;">
+      </div>
+
+    </td>
+  </tr>
+  <tr>
+    <td colspan="1" valign="top" align="center" style="padding: 10px 0 15px 0; mso-padding-alt: 10px 0 15px 0;">
+
+      <div style="color: #5ab14d; font-size: 11px; font-weight: 400; margin: 0">
+        Need funding to meet an urgent invoice order? No collateral? No problem.
+      </div>
+
+    </td>
+  </tr>
+  <tr>
+    <td colspan="1" valign="top" align="left" style="padding: 0 0 15px 0; mso-padding-alt: 0 0 15px 0;">
+
+      <div style="font-size: 11px; font-weight: 300; line-height: 0.9rem">
+        We don't ask questions and require you to fill out long and complicated forms. Our powerful
+        data analytics allow us to provide funding to your business within 24 hours based on your business fudamentals.
+      </div>
+
+    </td>
+  </tr>
+  <tr>
+    <td colspan="1" valign="top" align="left" style="padding: 0 0 15px 0; mso-padding-alt: 0 0 15px 0;">
+
+      <div style="font-size: 11px; font-weight: 300; line-height: 0.9rem">
+        Get rapid access to working capital when most needed with Kiu Loan.
+      </div>
+
+    </td>
+  </tr>
+  <tr>
+    <td colspan="1" valign="middle" align="center" height="46"
+        style="mso-text-raise: 8px; mso-line-height-rule:exactly; line-height:45px; padding: 10px 210px 60px 210px; mso-padding-alt: 10px 210px 20px 210px;">
+
+      <div style="border-radius: 5px; background-color: #5ab14d; width: 160px; height: 45px;">
+        <a href="#"
+           style="color: #ffffff;font-size: 16px; padding:0 0 0 0; mso-padding-alt: 0 0 0 0; text-align: center; text-decoration: none;">Find
+          out
+          more
+        </a>
+      </div>
+
+    </td>
+  </tr>
+
+</table>
+
+</body>
+</html>
