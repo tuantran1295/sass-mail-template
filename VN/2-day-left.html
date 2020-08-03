@@ -124,12 +124,12 @@ Outlook 2016 = mso 16
 <!--[if (mso 12) | (mso 14) | (mso 15) | (mso 16) ]>
 <style>
   h1 {
-    font-family: Montserrat ,Helvetica, Arial, sans-serif;
+    font-family: Montserrat, Helvetica, Arial, sans-serif;
     font-weight: normal;
   }
 
   td, p, span {
-    font-family: Montserrat ,Helvetica, Arial, sans-serif;
+    font-family: Montserrat, Helvetica, Arial, sans-serif;
     font-weight: normal;
   }
 
@@ -156,7 +156,7 @@ Outlook 2016 = mso 16
         style="padding: 0 0 40px 0; mso-padding-alt: 0 0 40px 0; position: relative;">
 
       <div style="width: 100%; display: block;">
-        <img border="0" src="https://cdn.kiuglobal.com/assets/img/mail/saas-template/4.png"
+        <img border="0" src="https://cdn.kiuglobal.com/assets/img/mail/saas-template/3.png"
              style="width: 500px;  border: none; display: block;">
       </div>
 
@@ -165,39 +165,51 @@ Outlook 2016 = mso 16
   <tr>
     <td style="width: 100%; padding: 0 0 30px 0; mso-padding-alt: 0 0 30px 0;">
       <div style="font-size: 16px; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0;">
-        Dear [Customer Name],
+        Chào ${object.partner_id.name},
+      </div>
+    </td>
+  </tr>
+  <!--  ${object.expiration_datetime.split()[0]}-->
+  <tr>
+    <td style="width: 100%; padding: 0 0 15px 0; mso-padding-alt: 0 0 15px 0;">
+      <div style="font-size: 12px; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0;">
+        Tài khoản dùng thử Kiu BMP của bạn sẽ hết hạn trong 2 ngày tới, vào ngày ${object.expiration_datetime.split()[0]}. Kiu hy vọng bạn hài lòng
+        với Kiu BMP và những lợi ích mà Kiu BMP đem lại. Đừng lo lắng, bạn vẫn còn 2 ngày để tiếp tục dùng thử Kiu BMP.
+        Tuy nhiên, sau thời gian này, tài khoản dùng thử cùng tất cả các dữ liệu bạn đã thiết lập sẽ được xóa khỏi hệ
+        thống của Kiu. Bạn có thể xem thông tin tài khoản của bạn dưới đây:
       </div>
     </td>
   </tr>
   <tr>
     <td style="width: 100%; padding: 0 0 40px 0; mso-padding-alt: 0 0 40px 0;">
       <div style="font-size: 12px; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0;">
-        Your Kiu free trial account will expire on (insert date). We hope you are happy with our product and enjoying
-        its benefits. Don't worry, you still have 2 days left in your free trial account. But after this period, your
-        account including all data in the system will be deleted.
+        Link đăng nhập: <a href="${object.public_url}web/login" style="color:#ea4a55;">${object.public_url}</a>
+      </div>
+      <div style="font-size: 12px; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0;">
+        Ngày đăng ký: ${object.create_date.split()[0]}
       </div>
     </td>
   </tr>
   <tr>
     <td style="width: 100%; padding: 0 0 20px 0; mso-padding-alt: 0 0 20px 0;">
       <p style="color: #ea4a55; font-size: 16px; font-weight: 400">
-        Need more time?
+        Bạn muốn tiếp tục trải nghiệm Kiu BMP?
       </p>
     </td>
   </tr>
   <tr>
     <td style="width: 100%; padding: 0 0 15px 0; mso-padding-alt: 0 0 15px 0;">
       <div style="font-size: 12px; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0;">
-        Luckily for you, Kiu is extremely flexible to suit any business needs, and we
-        have thousands of customers raging from micro-enterprises to large corporate clients.
+        Sản phẩm của Kiu cực kì linh hoạt và phù hợp với mọi nhu cầu quản lý của các doanh nghiệp. Hiện Kiu BMP đang có
+        hàng ngàn khách hàng sử dụng, từ các doanh nghiệp siêu nhỏ tới các tập đoàn lớn.
       </div>
     </td>
   </tr>
   <tr>
     <td style="width: 100%; padding: 0 0 20px 0; mso-padding-alt: 0 0 20px 0;">
       <div style="font-size: 12px;">
-        Let us help you pick the Kiu Package that is right for you and then try any of
-        our packages risk free for your first month. Select from Basic, Premium and Premium+ packages.
+        Hãy để Kiu giúp bạn lựa chọn gói sản phẩm phù hợp với doanh nghiệp bạn, sau đó dùng thử bất kỳ gói sản phẩm nào
+        bạn muốn trong tháng đầu tiên từ các gói Basic, Premium đến Premium+.
       </div>
     </td>
   </tr>
@@ -218,77 +230,61 @@ Outlook 2016 = mso 16
                   <p style="text-align: center; font-size: 13px; font-weight: 300; color: #ea4a55;">BASIC</p>
                 </th>
               </tr>
-              <tr style="font-size: 9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
+              <tr
+                style="font-size: 9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
                 <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
                 <td colspan="1" style="line-height: 12px !important;">&#8226;</td>
                 <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
                 <td colspan="7" style="line-height: 12px !important; font-weight: 300;">
-                  10GB Storage/5 User Accounts
+                  10GB Dữ liệu/5 Tài khoản người dùng
                 </td>
               </tr>
-              <tr style="font-size: 9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
+              <tr
+                style="font-size: 9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
                 <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
                 <td colspan="1" style="line-height: 12px !important;">&#8226;</td>
                 <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
                 <td colspan="7" style="line-height: 12px !important; font-weight: 300;">
-                  Phone, Email, Chat support
+                  Hỗ trợ qua điện thoại, email, chat
                 </td>
               </tr>
-              <tr style="font-size: 9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
+              <tr
+                style="font-size: 9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
                 <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
                 <td colspan="1" style="line-height: 12px !important;">&#8226;</td>
                 <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
                 <td colspan="7" style="line-height: 12px !important; font-weight: 300;">
-                  Kiu Marketplace Access
+                  Kế toán
                 </td>
               </tr>
-              <tr style="font-size: 9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
+              <tr
+                style="font-size: 9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
                 <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
                 <td colspan="1" style="line-height: 12px !important;">&#8226;</td>
                 <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
                 <td colspan="7" style="line-height: 12px !important; font-size: 9px; font-weight: 300;">
-                  Accounting
+                  Quản lý bán hàng/Quan hệ khách hàng CRM
                 </td>
               </tr>
-              <tr style="font-size: 9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
+              <tr
+                style="font-size: 9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
                 <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
                 <td colspan="1" style="line-height: 12px !important;">&#8226;</td>
                 <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
                 <td colspan="7" style="line-height: 12px !important; font-size: 9px; font-weight: 300;">
-                  Sales/CRM
+                  Mua hàng/Quản lý kho
                 </td>
               </tr>
-              <tr style="font-size: 9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
+              <tr
+                style="font-size: 9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
                 <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
                 <td colspan="1" style="line-height: 12px !important;">&#8226;</td>
                 <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
                 <td colspan="7" style="line-height: 12px !important; font-size: 9px; font-weight: 300;">
-                  Purchase/Inventory
-                </td>
-              </tr>
-              <tr style="font-size: 9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
-                <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
-                <td colspan="1" style="line-height: 12px !important;">&#8226;</td>
-                <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
-                <td colspan="7" style="line-height: 12px !important; font-size: 9px; font-weight: 300;">
-                  Payroll/Employee
+                  Bảng lương/Nhân viên
                 </td>
               </tr>
             </table>
-            <!--            <p-->
-            <!--              style="text-align: center; font-size: 13px; color: #ea4a55 ; margin: 10px 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0;">-->
-            <!--              BASIC-->
-            <!--            </p>-->
-            <!--            <ul-->
-            <!--              style="text-align: left; font-size: 9px; font-weight: 300; letter-spacing: 0.35px; line-height: 0.8rem; margin: 9px 0 9px 22px !important; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; list-style-type: disc;">-->
-            <!--              <li>10GB Storage/5 User Accounts</li>-->
-            <!--              <li>Phone, Email, Chat support</li>-->
-            <!--              <li>Kiu Marketplace Access</li>-->
-            <!--              <li>Accounting</li>-->
-            <!--              <li>Sales/CRM</li>-->
-            <!--              <li>Purchase/Inventory</li>-->
-            <!--              <li>Payroll/Employee</li>-->
-            <!--            </ul>-->
           </td>
           <td colspan="1" valign="top" align="left" width="16"
               style="width: 16px; height: 198px; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0;">
@@ -303,104 +299,79 @@ Outlook 2016 = mso 16
                   <p style="text-align: center; font-size: 13px; font-weight: 300; color: #ea4a55;">PREMIUM</p>
                 </th>
               </tr>
-              <tr style="font-size: 9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
+              <tr
+                style="font-size: 9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
                 <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
                 <td colspan="1" style="line-height: 12px !important;">&#8226;</td>
                 <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
                 <td colspan="7" style="line-height: 12px !important; font-size: 9px; font-weight: 300;">
-                  10GB Storage/5 User Accounts
+                  20GB dữ liệu/5 Tài khoản người dùng
                 </td>
               </tr>
-              <tr style="font-size:9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
+              <tr
+                style="font-size:9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
                 <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
                 <td colspan="1" style="line-height: 12px !important;">&#8226;</td>
                 <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
                 <td colspan="7" style="line-height: 12px !important; font-size: 9px; font-weight: 300;">
-                  Phone, Email, Chat support
+                  Kế toán
                 </td>
               </tr>
-              <tr style="font-size:9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
+              <tr
+                style="font-size:9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
                 <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
                 <td colspan="1" style="line-height: 12px !important; ">&#8226;</td>
                 <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
                 <td colspan="7" style="line-height: 12px !important; font-size: 9px; font-weight: 300;">
-                  Kiu Marketplace Access
+                  Quản lý bán hàng/Quan hệ khách hàng CRM
                 </td>
               </tr>
-              <tr style="font-size:9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
+              <tr
+                style="font-size:9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
                 <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
                 <td colspan="1" style="line-height: 12px !important; ">&#8226;</td>
                 <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
                 <td colspan="7" style="line-height: 12px !important; font-size: 9px; font-weight: 300;">
-                  Accounting
+                  Mua hàng/Quản lý kho
                 </td>
               </tr>
-              <tr style="font-size:9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
+              <tr
+                style="font-size:9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
                 <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
                 <td colspan="1" style="line-height: 12px !important;">&#8226;</td>
                 <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
                 <td colspan="7" style="line-height: 12px !important; font-size: 9px; font-weight: 300;">
-                  Sales/CRM
+                  Bảng lương/Nhân viên
                 </td>
               </tr>
-              <tr style="font-size:9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
+              <tr
+                style="font-size:9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
                 <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
                 <td colspan="1" style="line-height: 12px !important;">&#8226;</td>
                 <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
                 <td colspan="7" style="line-height: 12px !important; font-size: 9px; font-weight: 300;">
-                  Purchase/Inventory
+                  Điểm bán lẻ (POS)
                 </td>
               </tr>
-              <tr style="font-size:9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
+              <tr
+                style="font-size:9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
                 <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
                 <td colspan="1" style="line-height: 12px !important;">&#8226;</td>
                 <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
                 <td colspan="7" style="line-height: 12px !important; font-size: 9px; font-weight: 300;">
-                  Payroll/Employee
+                  Nhân sự nâng cao*
                 </td>
               </tr>
-              <tr style="font-size:9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
+              <tr
+                style="font-size:9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
                 <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
                 <td colspan="1" style="line-height: 12px !important; ">&#8226;</td>
                 <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
                 <td colspan="7" style="line-height: 12px !important; font-size: 9px; font-weight: 300;">
-                  Point of Sale
-                </td>
-              </tr>
-              <tr style="font-size:9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
-                <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
-                <td colspan="1" style="line-height: 12px !important;">&#8226;</td>
-                <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
-                <td colspan="7" style="line-height: 12px !important; font-size: 9px; font-weight: 300;">
-                  Core HR Management*
-                </td>
-              </tr>
-              <tr style="font-size:9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
-                <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
-                <td colspan="1" style="line-height: 12px !important;">&#8226;</td>
-                <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
-                <td colspan="7" style="line-height: 12px !important; font-size: 9px; font-weight: 300;">
-                  Website with live Chat Support
+                  Website và hỗ trợ trực tuyến
                 </td>
               </tr>
             </table>
-            <!--            <p-->
-            <!--              style="text-align: center; font-size: 13px; color: #ea4a55 ; margin: 10px 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0;">-->
-            <!--              PREMIUM-->
-            <!--            </p>-->
-            <!--            <ul-->
-            <!--              style="text-align: left; font-size: 9px; font-weight: 300; letter-spacing: 0.35px; line-height: 0.8rem; margin: 9px 0 9px 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; list-style-type: disc;">-->
-            <!--              <li style="padding:0 0 0 10px; mso-padding-alt: 0 0 0 10px; list-style:disc inside; mso-special-format:bullet;">20GB Storage/10 User Accounts</li>-->
-            <!--              <li style="padding:0 0 0 10px; mso-padding-alt: 0 0 0 10px; list-style:disc inside; mso-special-format:bullet;">Dedicated concierge support</li>-->
-            <!--              <li style="padding:0 0 0 10px; mso-padding-alt: 0 0 0 10px; list-style:disc inside; mso-special-format:bullet;">Kiu Marketplace Access</li>-->
-            <!--              <li style="padding:0 0 0 10px; mso-padding-alt: 0 0 0 10px; list-style:disc inside; mso-special-format:bullet;">Accounting</li>-->
-            <!--              <li style="padding:0 0 0 10px; mso-padding-alt: 0 0 0 10px; list-style:disc inside; mso-special-format:bullet;">Sales/CRM</li>-->
-            <!--              <li style="padding:0 0 0 10px; mso-padding-alt: 0 0 0 10px; list-style:disc inside; mso-special-format:bullet;">Purchase/Inventory</li>-->
-            <!--              <li style="padding:0 0 0 10px; mso-padding-alt: 0 0 0 10px; list-style:disc inside; mso-special-format:bullet;">Payroll/Employee</li>-->
-            <!--              <li style="padding:0 0 0 10px; mso-padding-alt: 0 0 0 10px; list-style:disc inside; mso-special-format:bullet;">Point of Sale</li>-->
-            <!--              <li style="padding:0 0 0 10px; mso-padding-alt: 0 0 0 10px; list-style:disc inside; mso-special-format:bullet;">Core HR Management*</li>-->
-            <!--              <li style="padding:0 0 0 10px; mso-padding-alt: 0 0 0 10px; list-style:disc inside; mso-special-format:bullet;">Website with live Chat Support</li>-->
-            <!--            </ul>-->
           </td>
           <td colspan="1" valign="top" align="left" width="16"
               style="width: 16px; height: 198px; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0;">
@@ -415,122 +386,109 @@ Outlook 2016 = mso 16
                   <p style="text-align: center; font-size: 13px; font-weight: 300; color: #ea4a55;">PREMIUM+</p>
                 </th>
               </tr>
-              <tr style="font-size:9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
-                <td colspan="1" style="mso-line-height-rule:exactly; line-height: 12px !important; width: 10px">&nbsp;</td>
-                <td colspan="1" style="mso-line-height-rule:exactly; line-height: 12px !important;">&#8226;</td>
-                <td colspan="1" style="mso-line-height-rule:exactly; line-height: 12px !important; width: 10px">&nbsp;</td>
-                <td colspan="7" style="mso-line-height-rule:exactly; line-height: 12px !important; font-size: 9px; font-weight: 300;">
-                  10GB Storage/5 User Accounts
+              <tr
+                style="font-size: 9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
+                <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
+                <td colspan="1" style="line-height: 12px !important;">&#8226;</td>
+                <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
+                <td colspan="7" style="line-height: 12px !important; font-size: 9px; font-weight: 300;">
+                  50GB Dữ liệu/25 Tài khoản người dùng
                 </td>
               </tr>
-              <tr style="font-size:9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
-                <td colspan="1" style="mso-line-height-rule:exactly; line-height: 12px !important; width: 10px">&nbsp;</td>
-                <td colspan="1" style="mso-line-height-rule:exactly; line-height: 12px !important;">&#8226;</td>
-                <td colspan="1" style="mso-line-height-rule:exactly; line-height: 12px !important; width: 10px">&nbsp;</td>
-                <td colspan="7" style="mso-line-height-rule:exactly; line-height: 12px !important; font-size: 9px; font-weight: 300;">
-                  Phone, Email, Chat support
+              <tr
+                style="font-size:9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
+                <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
+                <td colspan="1" style="line-height: 12px !important;">&#8226;</td>
+                <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
+                <td colspan="7" style="line-height: 12px !important; font-size: 9px; font-weight: 300;">
+                  Chuyên viên hỗ trợ riêng
                 </td>
               </tr>
-              <tr style="font-size:9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
-                <td colspan="1" style="mso-line-height-rule:exactly; line-height: 12px !important; width: 10px">&nbsp;</td>
-                <td colspan="1" style="mso-line-height-rule:exactly; line-height: 12px !important;">&#8226;</td>
-                <td colspan="1" style="mso-line-height-rule:exactly; line-height: 12px !important;width: 10px">&nbsp;</td>
-                <td colspan="7" style="mso-line-height-rule:exactly; line-height: 12px !important; font-size: 9px; font-weight: 300;">
-                  Kiu Marketplace Access
+              <tr
+                style="font-size:9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
+                <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
+                <td colspan="1" style="line-height: 12px !important; ">&#8226;</td>
+                <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
+                <td colspan="7" style="line-height: 12px !important; font-size: 9px; font-weight: 300;">
+                  Kế toán
                 </td>
               </tr>
-              <tr style="font-size:9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
-                <td colspan="1" style="mso-line-height-rule:exactly; line-height: 12px !important; width: 10px">&nbsp;</td>
-                <td colspan="1" style="mso-line-height-rule:exactly; line-height: 12px !important;">&#8226;</td>
-                <td colspan="1" style="mso-line-height-rule:exactly; line-height: 12px !important; width: 10px">&nbsp;</td>
-                <td colspan="7" style="mso-line-height-rule:exactly; line-height: 12px !important; font-size: 9px; font-weight: 300;">
-                  Accounting
+              <tr
+                style="font-size:9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
+                <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
+                <td colspan="1" style="line-height: 12px !important; ">&#8226;</td>
+                <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
+                <td colspan="7" style="line-height: 12px !important; font-size: 9px; font-weight: 300;">
+                  Quản lý bán hàng/Quan hệ khách hàng CRM
                 </td>
               </tr>
-              <tr style="font-size:9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
-                <td colspan="1" style="mso-line-height-rule:exactly; line-height: 12px !important; width: 10px">&nbsp;</td>
-                <td colspan="1" style="mso-line-height-rule:exactly; line-height: 12px !important;">&#8226;</td>
-                <td colspan="1" style="mso-line-height-rule:exactly; line-height: 12px !important; width: 10px">&nbsp;</td>
-                <td colspan="7" style="mso-line-height-rule:exactly; line-height: 12px !important; font-size: 9px; font-weight: 300;">
-                  Sales/CRM
+              <tr
+                style="font-size:9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
+                <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
+                <td colspan="1" style="line-height: 12px !important;">&#8226;</td>
+                <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
+                <td colspan="7" style="line-height: 12px !important; font-size: 9px; font-weight: 300;">
+                  Mua hàng/Quản lý kho
                 </td>
               </tr>
-              <tr style="font-size:9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
-                <td colspan="1" style="mso-line-height-rule:exactly; line-height: 12px !important; width: 10px">&nbsp;</td>
-                <td colspan="1" style="mso-line-height-rule:exactly; line-height: 12px !important;">&#8226;</td>
-                <td colspan="1" style="mso-line-height-rule:exactly; line-height: 12px !important; width: 10px">&nbsp;</td>
-                <td colspan="7" style="mso-line-height-rule:exactly; line-height: 12px !important; font-size: 9px; font-weight: 300;">
-                  Purchase/Inventory
+              <tr
+                style="font-size:9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
+                <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
+                <td colspan="1" style="line-height: 12px !important;">&#8226;</td>
+                <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
+                <td colspan="7" style="line-height: 12px !important; font-size: 9px; font-weight: 300;">
+                  Bảng lương/Nhân viên
                 </td>
               </tr>
-              <tr style="font-size:9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
-                <td colspan="1" style="mso-line-height-rule:exactly; line-height: 12px !important; width: 10px">&nbsp;</td>
-                <td colspan="1" style="mso-line-height-rule:exactly; line-height: 12px !important;">&#8226;</td>
-                <td colspan="1" style="mso-line-height-rule:exactly; line-height: 12px !important; width: 10px">&nbsp;</td>
-                <td colspan="7" style="mso-line-height-rule:exactly; line-height: 12px !important; font-size: 9px; font-weight: 300;">
-                  Payroll/Employee
+              <tr
+                style="font-size:9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
+                <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
+                <td colspan="1" style="line-height: 12px !important;">&#8226;</td>
+                <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
+                <td colspan="7" style="line-height: 12px !important; font-size: 9px; font-weight: 300;">
+                  Điểm bán lẻ (POS)
                 </td>
               </tr>
-              <tr style="font-size:9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
-                <td colspan="1" style="mso-line-height-rule:exactly; line-height: 12px !important; width: 10px">&nbsp;</td>
-                <td colspan="1" style="mso-line-height-rule:exactly; line-height: 12px !important;">&#8226;</td>
-                <td colspan="1" style="mso-line-height-rule:exactly; line-height: 12px !important; width: 10px">&nbsp;</td>
-                <td colspan="7" style="mso-line-height-rule:exactly; line-height: 12px !important; font-size: 9px; font-weight: 300;">
-                  Point of Sale
+              <tr
+                style="font-size:9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
+                <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
+                <td colspan="1" style="line-height: 12px !important; ">&#8226;</td>
+                <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
+                <td colspan="7" style="line-height: 12px !important; font-size: 9px; font-weight: 300;">
+                  Nhân sự nâng cao*
                 </td>
               </tr>
-              <tr style="font-size:9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
-                <td colspan="1" style="mso-line-height-rule:exactly; line-height: 12px !important; width: 10px">&nbsp;</td>
-                <td colspan="1" style="mso-line-height-rule:exactly; line-height: 12px !important;">&#8226;</td>
-                <td colspan="1" style="mso-line-height-rule:exactly; line-height: 12px !important; width: 10px">&nbsp;</td>
-                <td colspan="7" style="mso-line-height-rule:exactly; line-height: 12px !important; font-size: 9px; font-weight: 300;">
-                  Core HR Management*
+              <tr
+                style="font-size:9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
+                <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
+                <td colspan="1" style="line-height: 12px !important;">&#8226;</td>
+                <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
+                <td colspan="7" style="line-height: 12px !important; font-size: 9px; font-weight: 300;">
+                  Website và hỗ trợ trực tuyến
                 </td>
               </tr>
-              <tr style="font-size:9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
-                <td colspan="1" style="mso-line-height-rule:exactly; line-height: 12px !important; width: 10px">&nbsp;</td>
-                <td colspan="1" style="mso-line-height-rule:exactly; line-height: 12px !important;">&#8226;</td>
-                <td colspan="1" style="mso-line-height-rule:exactly; line-height: 12px !important; width: 10px">&nbsp;</td>
-                <td colspan="7" style="mso-line-height-rule:exactly; line-height: 12px !important; font-size: 9px; font-weight: 300;">
-                  Website with live Chat Support
+              <tr
+                style="font-size:9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
+                <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
+                <td colspan="1" style="line-height: 12px !important;">&#8226;</td>
+                <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
+                <td colspan="7" style="line-height: 12px !important; font-size: 9px; font-weight: 300;">
+                  Quản lý Sản xuất
                 </td>
               </tr>
-              <tr style="font-size:9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
-                <td colspan="1" style="mso-line-height-rule:exactly; line-height: 12px !important; width: 10px">&nbsp;</td>
-                <td colspan="1" style="mso-line-height-rule:exactly; line-height: 12px !important;">&#8226;</td>
-                <td colspan="1" style="mso-line-height-rule:exactly; line-height: 12px !important; width: 10px">&nbsp;</td>
-                <td colspan="7" style="mso-line-height-rule:exactly; line-height: 12px !important; font-size: 9px; font-weight: 300;">
-                  Manufacturing
+              <tr
+                style="font-size:9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
+                <td colspan="1" style="mso-line-height-rule:exactly; line-height: 12px !important; width: 10px">&nbsp;
                 </td>
-              </tr>
-              <tr style="font-size:9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
-                <td colspan="1" style="mso-line-height-rule:exactly; line-height: 12px !important; width: 10px">&nbsp;</td>
                 <td colspan="1" style="mso-line-height-rule:exactly; line-height: 12px !important;">&#8226;</td>
-                <td colspan="1" style="mso-line-height-rule:exactly; line-height: 12px !important; width: 10px">&nbsp;</td>
-                <td colspan="7" style="mso-line-height-rule:exactly; line-height: 12px !important; font-size: 9px; font-weight: 300;">
-                  Advanced Project Management
+                <td colspan="1" style="mso-line-height-rule:exactly; line-height: 12px !important; width: 10px">&nbsp;
+                </td>
+                <td colspan="7"
+                    style="mso-line-height-rule:exactly; line-height: 12px !important; font-size: 9px; font-weight: 300;">
+                  Quản lý Dự án
                 </td>
               </tr>
             </table>
-            <!--            <p-->
-            <!--              style="text-align: center; font-size: 13px; color: #ea4a55 ; margin: 10px 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0;">-->
-            <!--              PREMIUM+-->
-            <!--            </p>-->
-            <!--            <ul-->
-            <!--              style="text-align: left; font-size: 9px; font-weight: 300; letter-spacing: 0.35px; line-height: 0.8rem; margin: 9px 0 9px 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; list-style-type: disc;">-->
-            <!--              <li style="Margin:0 0 0 10px; list-style-position: outside; mso-special-format:bullet;">20GB Storage/10 User Accounts</li>-->
-            <!--              <li style="Margin:0 0 0 10px; list-style-position: outside; mso-special-format:bullet;">Dedicated concierge support</li>-->
-            <!--              <li style="Margin:0 0 0 10px; list-style-position: outside; mso-special-format:bullet;">Kiu Marketplace Access</li>-->
-            <!--              <li style="Margin:0 0 0 10px; list-style-position: outside; mso-special-format:bullet;">Accounting</li>-->
-            <!--              <li style="Margin:0 0 0 10px; list-style-position: outside; mso-special-format:bullet;">Sales/CRM</li>-->
-            <!--              <li style="Margin:0 0 0 10px; list-style-position: outside; mso-special-format:bullet;">Purchase/Inventory</li>-->
-            <!--              <li style="Margin:0 0 0 10px; list-style-position: outside; mso-special-format:bullet;">Payroll/Employee</li>-->
-            <!--              <li style="Margin:0 0 0 10px; list-style-position: outside; mso-special-format:bullet;">Point of Sale</li>-->
-            <!--              <li style="Margin:0 0 0 10px; list-style-position: outside; mso-special-format:bullet;">Core HR Management*</li>-->
-            <!--              <li style="Margin:0 0 0 10px; list-style-position: outside; mso-special-format:bullet;">Website with live Chat Support</li>-->
-            <!--              <li style="Margin:0 0 0 10px; list-style-position: outside; mso-special-format:bullet;">Manufacturing</li>-->
-            <!--              <li style="Margin:0 0 0 10px; list-style-position: outside; mso-special-format:bullet;">Advanced Project Management</li>-->
-            <!--            </ul>-->
           </td>
           <td colspan="1" valign="top" align="left" width="16"
               style="width: 16px; height: 198px; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0;">
@@ -541,19 +499,20 @@ Outlook 2016 = mso 16
     </td>
   </tr>
   <tr>
-    <td colspan="1" valign="top" align="right" style="text-align: right; padding: 5px 20px 0 0; mso-padding-alt: 5px 20px 0 0;">
-      <div
-        style="font-size: 9px; font-weight: 300; letter-spacing: normal; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0;">
-        *Core HR Management includes: recruitment, leaves, overtime, advanced employee  
-      </div>
+    <td colspan="1" valign="top" align="right" style="padding: 5px 10px 0 0; mso-padding-alt: 5px 10px 0 0;">
+
+      <p style="width: 580px; font-size: 9px; font-weight: 300;">
+        *Nhân sự nâng cao bao gồm: Tuyển dụng, Ngày nghỉ, Tăng ca, Tạm ứng nhân viên
+      </p>
+
     </td>
   </tr>
   <tr>
-    <td colspan="1" valign="top" align="center" style="padding: 25px 0 0 0; mso-padding-alt: 25px 0 0 0;">
+    <td colspan="1" valign="top" align="center" style="padding: 15px 0 0 0; mso-padding-alt: 15px 0 0 0;">
 
       <p style="width: 580px; color: #ea4a55; font-size: 12px; font-weight: 300;">
-        You can continue enjoying the benefits of Kiu BMP by selecting the best plan
-        for your business.
+        Bạn có thể tiếp tục trải nghiệm các tính năng của Kiu BMP bằng cách lựa chọn gói sản phẩm phù hợp nhất với doanh
+        nghiệp của bạn.
       </p>
 
     </td>
@@ -563,9 +522,9 @@ Outlook 2016 = mso 16
         style="mso-text-raise: 8px; mso-line-height-rule:exactly; line-height:45px; padding: 25px 210px 20px 210px; mso-padding-alt: 25px 210px 20px 210px;">
 
       <div style="border-radius: 5px; background-color: #ea4a55; width: 160px; height: 45px;">
-        <a href="#"
-           style="color: #ffffff;font-size: 16px; padding:0 0 0 0; mso-padding-alt: 0 0 0 0; text-align: center; text-decoration: none;">
-          Upgrade now
+        <a href="mailto:info@kiuglobal.com"
+           style="color: #ffffff;font-size: 16px; font-weight: 500; padding:0 0 0 0; mso-padding-alt: 0 0 0 0; text-align: center; text-decoration: none;">
+          Nâng cấp tài khoản
         </a>
       </div>
 
@@ -595,7 +554,7 @@ Outlook 2016 = mso 16
     <td colspan="1" valign="top" align="center" style="padding: 10px 0 15px 0; mso-padding-alt: 10px 0 15px 0;">
 
       <div style="color: #5ab14d; font-size: 11px; font-weight: 400; margin: 0">
-        Need funding to meet an urgent invoice order? No collateral? No problem.
+        Bạn cần vay vốn để thực hiện gấp một đơn hàng? Bạn không có tài sản đảm bảo? Đừng lo lắng
       </div>
 
     </td>
@@ -604,8 +563,9 @@ Outlook 2016 = mso 16
     <td colspan="1" valign="top" align="left" style="padding: 0 0 15px 0; mso-padding-alt: 0 0 15px 0;">
 
       <div style="font-size: 11px; font-weight: 300; line-height: 0.9rem">
-        We don't ask questions and require you to fill out long and complicated forms. Our powerful
-        data analytics allow us to provide funding to your business within 24 hours based on your business fudamentals.
+        Kiu không đặt câu hỏi và yêu cầu bạn điền vào các biểu mẫu rườm rà, phức tạp. Chức năng phân tích dữ liệu hiệu
+        quả của Kiu cho phép Kiu cung cấp tài chính cho các doanh nghiệp trong vòng 24 giờ dựa trên cơ sở hoạt động kinh
+        doanh của doanh nghiệp.
       </div>
 
     </td>
@@ -614,7 +574,7 @@ Outlook 2016 = mso 16
     <td colspan="1" valign="top" align="left" style="padding: 0 0 15px 0; mso-padding-alt: 0 0 15px 0;">
 
       <div style="font-size: 11px; font-weight: 300; line-height: 0.9rem">
-        Get rapid access to working capital when most needed with Kiu Loan.
+        Hãy nhận hỗ trợ tài chính một cách nhanh chóng cùng với Kiu Loan.
       </div>
 
     </td>
@@ -624,10 +584,9 @@ Outlook 2016 = mso 16
         style="mso-text-raise: 8px; mso-line-height-rule:exactly; line-height:45px; padding: 10px 210px 60px 210px; mso-padding-alt: 10px 210px 20px 210px;">
 
       <div style="border-radius: 5px; background-color: #5ab14d; width: 160px; height: 45px;">
-        <a href="#"
-           style="color: #ffffff;font-size: 16px; padding:0 0 0 0; mso-padding-alt: 0 0 0 0; text-align: center; text-decoration: none;">Find
-          out
-          more
+        <a href="https://www.kiuglobal.com/"
+           style="color: #ffffff;font-size: 16px; font-weight: 500; padding:0 0 0 0; mso-padding-alt: 0 0 0 0; text-align: center; text-decoration: none;">Tìm
+          hiểu thêm
         </a>
       </div>
 
