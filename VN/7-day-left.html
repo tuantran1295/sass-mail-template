@@ -124,12 +124,12 @@ Outlook 2016 = mso 16
 <!--[if (mso 12) | (mso 14) | (mso 15) | (mso 16) ]>
 <style>
   h1 {
-    font-family: Montserrat ,Helvetica, Arial, sans-serif;
+    font-family: Montserrat, Helvetica, Arial, sans-serif;
     font-weight: normal;
   }
 
   td, p, span {
-    font-family: Montserrat ,Helvetica, Arial, sans-serif;
+    font-family: Montserrat, Helvetica, Arial, sans-serif;
     font-weight: normal;
   }
 
@@ -165,24 +165,25 @@ Outlook 2016 = mso 16
   <tr>
     <td style="width: 100%; padding: 0 0 30px 0; mso-padding-alt: 0 0 30px 0;">
       <div style="font-size: 16px; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0;">
-        Xin chào ${object.partner_id.name},
+        Chào ${object.partner_id.name},
       </div>
     </td>
   </tr>
+  <!--  ${object.expiration_datetime.split()[0]}-->
   <tr>
     <td style="width: 100%; padding: 0 0 15px 0; mso-padding-alt: 0 0 15px 0;">
       <div style="font-size: 12px; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0;">
-        Tài khoản dùng thử miễn phí của bạn sẽ hết hạn vào ngày ${object.expiration_datetime.split()[0]} Chúng tôi hy
-        vọng bạn hài lòng với sản phẩm của chúng tôi và tận hưởng những lợi ích từ nó. Đừng lo lắng, bạn vẫn còn 7 ngày
-        dùng thử miễn phí nhưng sau giai đoạn dùng thử, tài khoản bao gồm tất cả dữ liệu của bạn sẽ bị xóa khỏi hệ
-        thống.
+        Tài khoản dùng thử Kiu BMP của bạn sẽ hết hạn trong 7 ngày tới, vào ngày [chèn ngày]. Kiu hy vọng bạn hài lòng
+        với Kiu BMP và những lợi ích mà Kiu BMP đem lại. Đừng lo lắng, bạn vẫn còn 7 ngày để tiếp tục dùng thử Kiu BMP.
+        Tuy nhiên, sau thời gian này, tài khoản dùng thử cùng tất cả các dữ liệu bạn đã thiết lập sẽ được xóa khỏi hệ
+        thống của Kiu. Bạn có thể xem thông tin tài khoản của bạn dưới đây:
       </div>
     </td>
   </tr>
   <tr>
     <td style="width: 100%; padding: 0 0 40px 0; mso-padding-alt: 0 0 40px 0;">
       <div style="font-size: 12px; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0;">
-        URL Tài khoản: <a href="${object.public_url}web/login" style="color:#ea4a55;">${object.public_url}</a>
+        Link đăng nhập: <a href="${object.public_url}web/login" style="color:#ea4a55;">${object.public_url}</a>
       </div>
       <div style="font-size: 12px; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0;">
         Ngày đăng ký: ${object.create_date.split()[0]}
@@ -192,23 +193,23 @@ Outlook 2016 = mso 16
   <tr>
     <td style="width: 100%; padding: 0 0 20px 0; mso-padding-alt: 0 0 20px 0;">
       <p style="color: #ea4a55; font-size: 16px; font-weight: 400">
-        Cần thêm thời gian?
+        Bạn muốn tiếp tục trải nghiệm Kiu BMP?
       </p>
     </td>
   </tr>
   <tr>
     <td style="width: 100%; padding: 0 0 15px 0; mso-padding-alt: 0 0 15px 0;">
       <div style="font-size: 12px; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0;">
-        Rất may cho bạn, Kiu cực kỳ linh hoạt để phù hợp với bất kỳ nhu cầu kinh doanh nào, và chúng tôi
-        có hàng ngàn khách hàng từ các doanh nghiệp siêu nhỏ đến các khách hàng doanh nghiệp lớn.
+        Sản phẩm của Kiu cực kì linh hoạt và phù hợp với mọi nhu cầu quản lý của các doanh nghiệp. Hiện Kiu BMP đang có
+        hàng ngàn khách hàng sử dụng, từ các doanh nghiệp siêu nhỏ tới các tập đoàn lớn.
       </div>
     </td>
   </tr>
   <tr>
     <td style="width: 100%; padding: 0 0 20px 0; mso-padding-alt: 0 0 20px 0;">
       <div style="font-size: 12px;">
-        Hãy để chúng tôi giúp bạn chọn gói Kiu phù hợp với bạn và sau đó dùng thử miễn phí bất kỳ
-        gói nào cho tháng đầu tiên. Chọn từ các gói Cơ bản, Cao cấp và Cao cấp+.
+        Hãy để Kiu giúp bạn lựa chọn gói sản phẩm phù hợp với doanh nghiệp bạn, sau đó dùng thử bất kỳ gói sản phẩm nào
+        bạn muốn trong tháng đầu tiên từ các gói Basic, Premium đến Premium+.
       </div>
     </td>
   </tr>
@@ -226,7 +227,7 @@ Outlook 2016 = mso 16
               <tr>
                 <th colspan="10"
                     style="padding: 10px 10px 10px 10px; mso-padding-alt: 10px 10px 10px 10px;">
-                  <p style="text-align: center; font-size: 13px; font-weight: 300; color: #ea4a55;">Gói Cơ Bản</p>
+                  <p style="text-align: center; font-size: 13px; font-weight: 300; color: #ea4a55;">BASIC</p>
                 </th>
               </tr>
               <tr
@@ -235,7 +236,7 @@ Outlook 2016 = mso 16
                 <td colspan="1" style="line-height: 12px !important;">&#8226;</td>
                 <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
                 <td colspan="7" style="line-height: 12px !important; font-weight: 300;">
-                  10GB Dung lượng lưu trữ/5 tài khoản người dùng
+                  10GB Dữ liệu/5 Tài khoản người dùng
                 </td>
               </tr>
               <tr
@@ -244,7 +245,7 @@ Outlook 2016 = mso 16
                 <td colspan="1" style="line-height: 12px !important;">&#8226;</td>
                 <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
                 <td colspan="7" style="line-height: 12px !important; font-weight: 300;">
-                  Hỗ trợ qua điện thoại, email và chat
+                  Hỗ trợ qua điện thoại, email, chat
                 </td>
               </tr>
               <tr
@@ -253,15 +254,6 @@ Outlook 2016 = mso 16
                 <td colspan="1" style="line-height: 12px !important;">&#8226;</td>
                 <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
                 <td colspan="7" style="line-height: 12px !important; font-weight: 300;">
-                  Quyền truy cập chợ ứng dụng Kiu
-                </td>
-              </tr>
-              <tr
-                style="font-size: 9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
-                <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
-                <td colspan="1" style="line-height: 12px !important;">&#8226;</td>
-                <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
-                <td colspan="7" style="line-height: 12px !important; font-size: 9px; font-weight: 300;">
                   Kế toán
                 </td>
               </tr>
@@ -271,7 +263,7 @@ Outlook 2016 = mso 16
                 <td colspan="1" style="line-height: 12px !important;">&#8226;</td>
                 <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
                 <td colspan="7" style="line-height: 12px !important; font-size: 9px; font-weight: 300;">
-                  Bán hàng/CRM
+                  Quản lý bán hàng/Quan hệ khách hàng CRM
                 </td>
               </tr>
               <tr
@@ -280,7 +272,7 @@ Outlook 2016 = mso 16
                 <td colspan="1" style="line-height: 12px !important;">&#8226;</td>
                 <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
                 <td colspan="7" style="line-height: 12px !important; font-size: 9px; font-weight: 300;">
-                  Mua bán/Kho bãi
+                  Mua hàng/Quản lý kho
                 </td>
               </tr>
               <tr
@@ -289,7 +281,7 @@ Outlook 2016 = mso 16
                 <td colspan="1" style="line-height: 12px !important;">&#8226;</td>
                 <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
                 <td colspan="7" style="line-height: 12px !important; font-size: 9px; font-weight: 300;">
-                  Lương/Nhân viên
+                  Bảng lương/Nhân viên
                 </td>
               </tr>
             </table>
@@ -304,7 +296,7 @@ Outlook 2016 = mso 16
               <tr>
                 <th colspan="10"
                     style="padding: 10px 10px 10px 10px; mso-padding-alt: 10px 10px 10px 10px;">
-                  <p style="text-align: center; font-size: 13px; font-weight: 300; color: #ea4a55;">Gói Cao Cấp</p>
+                  <p style="text-align: center; font-size: 13px; font-weight: 300; color: #ea4a55;">PREMIUM</p>
                 </th>
               </tr>
               <tr
@@ -313,31 +305,13 @@ Outlook 2016 = mso 16
                 <td colspan="1" style="line-height: 12px !important;">&#8226;</td>
                 <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
                 <td colspan="7" style="line-height: 12px !important; font-size: 9px; font-weight: 300;">
-                  10GB Dung lượng lưu trữ/5 tài khoản người dùng
+                  20GB dữ liệu/5 Tài khoản người dùng
                 </td>
               </tr>
               <tr
                 style="font-size:9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
                 <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
                 <td colspan="1" style="line-height: 12px !important;">&#8226;</td>
-                <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
-                <td colspan="7" style="line-height: 12px !important; font-size: 9px; font-weight: 300;">
-                  Hỗ trợ qua điện thoại, email và chat
-                </td>
-              </tr>
-              <tr
-                style="font-size:9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
-                <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
-                <td colspan="1" style="line-height: 12px !important; ">&#8226;</td>
-                <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
-                <td colspan="7" style="line-height: 12px !important; font-size: 9px; font-weight: 300;">
-                  Quyền truy cập chợ ứng dụng Kiu
-                </td>
-              </tr>
-              <tr
-                style="font-size:9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
-                <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
-                <td colspan="1" style="line-height: 12px !important; ">&#8226;</td>
                 <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
                 <td colspan="7" style="line-height: 12px !important; font-size: 9px; font-weight: 300;">
                   Kế toán
@@ -346,28 +320,10 @@ Outlook 2016 = mso 16
               <tr
                 style="font-size:9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
                 <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
-                <td colspan="1" style="line-height: 12px !important;">&#8226;</td>
+                <td colspan="1" style="line-height: 12px !important; ">&#8226;</td>
                 <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
                 <td colspan="7" style="line-height: 12px !important; font-size: 9px; font-weight: 300;">
-                  Bán hàng/CRM
-                </td>
-              </tr>
-              <tr
-                style="font-size:9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
-                <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
-                <td colspan="1" style="line-height: 12px !important;">&#8226;</td>
-                <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
-                <td colspan="7" style="line-height: 12px !important; font-size: 9px; font-weight: 300;">
-                  Mua bán/Kho bãi
-                </td>
-              </tr>
-              <tr
-                style="font-size:9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
-                <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
-                <td colspan="1" style="line-height: 12px !important;">&#8226;</td>
-                <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
-                <td colspan="7" style="line-height: 12px !important; font-size: 9px; font-weight: 300;">
-                  Lương/Nhân viên
+                  Quản lý bán hàng/Quan hệ khách hàng CRM
                 </td>
               </tr>
               <tr
@@ -376,7 +332,7 @@ Outlook 2016 = mso 16
                 <td colspan="1" style="line-height: 12px !important; ">&#8226;</td>
                 <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
                 <td colspan="7" style="line-height: 12px !important; font-size: 9px; font-weight: 300;">
-                  Diểm bán hàng
+                  Mua hàng/Quản lý kho
                 </td>
               </tr>
               <tr
@@ -385,7 +341,7 @@ Outlook 2016 = mso 16
                 <td colspan="1" style="line-height: 12px !important;">&#8226;</td>
                 <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
                 <td colspan="7" style="line-height: 12px !important; font-size: 9px; font-weight: 300;">
-                  Công cụ quản trị nhân sự*
+                  Bảng lương/Nhân viên
                 </td>
               </tr>
               <tr
@@ -394,7 +350,25 @@ Outlook 2016 = mso 16
                 <td colspan="1" style="line-height: 12px !important;">&#8226;</td>
                 <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
                 <td colspan="7" style="line-height: 12px !important; font-size: 9px; font-weight: 300;">
-                  Website hỗ trợ chat trực tuyến
+                  Điểm bán lẻ (POS)
+                </td>
+              </tr>
+              <tr
+                style="font-size:9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
+                <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
+                <td colspan="1" style="line-height: 12px !important;">&#8226;</td>
+                <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
+                <td colspan="7" style="line-height: 12px !important; font-size: 9px; font-weight: 300;">
+                  Nhân sự nâng cao*
+                </td>
+              </tr>
+              <tr
+                style="font-size:9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
+                <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
+                <td colspan="1" style="line-height: 12px !important; ">&#8226;</td>
+                <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
+                <td colspan="7" style="line-height: 12px !important; font-size: 9px; font-weight: 300;">
+                  Website và hỗ trợ trực tuyến
                 </td>
               </tr>
             </table>
@@ -409,7 +383,7 @@ Outlook 2016 = mso 16
               <tr>
                 <th colspan="10"
                     style="padding: 10px 10px 10px 10px; mso-padding-alt: 10px 10px 10px 10px;">
-                  <p style="text-align: center; font-size: 13px; font-weight: 300; color: #ea4a55;">Gói Cao Cấp+</p>
+                  <p style="text-align: center; font-size: 13px; font-weight: 300; color: #ea4a55;">PREMIUM+</p>
                 </th>
               </tr>
               <tr
@@ -418,7 +392,7 @@ Outlook 2016 = mso 16
                 <td colspan="1" style="line-height: 12px !important;">&#8226;</td>
                 <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
                 <td colspan="7" style="line-height: 12px !important; font-size: 9px; font-weight: 300;">
-                  10GB Dung lượng lưu trữ/5 tài khoản người dùng
+                  50GB Dữ liệu/25 Tài khoản người dùng
                 </td>
               </tr>
               <tr
@@ -427,16 +401,7 @@ Outlook 2016 = mso 16
                 <td colspan="1" style="line-height: 12px !important;">&#8226;</td>
                 <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
                 <td colspan="7" style="line-height: 12px !important; font-size: 9px; font-weight: 300;">
-                  Hỗ trợ qua điện thoại, email và chat
-                </td>
-              </tr>
-              <tr
-                style="font-size:9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
-                <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
-                <td colspan="1" style="line-height: 12px !important; ">&#8226;</td>
-                <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
-                <td colspan="7" style="line-height: 12px !important; font-size: 9px; font-weight: 300;">
-                  Quyền truy cập chợ ứng dụng Kiu
+                  Chuyên viên hỗ trợ riêng
                 </td>
               </tr>
               <tr
@@ -451,10 +416,10 @@ Outlook 2016 = mso 16
               <tr
                 style="font-size:9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
                 <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
-                <td colspan="1" style="line-height: 12px !important;">&#8226;</td>
+                <td colspan="1" style="line-height: 12px !important; ">&#8226;</td>
                 <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
                 <td colspan="7" style="line-height: 12px !important; font-size: 9px; font-weight: 300;">
-                  Bán hàng/CRM
+                  Quản lý bán hàng/Quan hệ khách hàng CRM
                 </td>
               </tr>
               <tr
@@ -463,7 +428,7 @@ Outlook 2016 = mso 16
                 <td colspan="1" style="line-height: 12px !important;">&#8226;</td>
                 <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
                 <td colspan="7" style="line-height: 12px !important; font-size: 9px; font-weight: 300;">
-                  Mua bán/Kho bãi
+                  Mua hàng/Quản lý kho
                 </td>
               </tr>
               <tr
@@ -472,7 +437,16 @@ Outlook 2016 = mso 16
                 <td colspan="1" style="line-height: 12px !important;">&#8226;</td>
                 <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
                 <td colspan="7" style="line-height: 12px !important; font-size: 9px; font-weight: 300;">
-                  Lương/Nhân viên
+                  Bảng lương/Nhân viên
+                </td>
+              </tr>
+              <tr
+                style="font-size:9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
+                <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
+                <td colspan="1" style="line-height: 12px !important;">&#8226;</td>
+                <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
+                <td colspan="7" style="line-height: 12px !important; font-size: 9px; font-weight: 300;">
+                  Điểm bán lẻ (POS)
                 </td>
               </tr>
               <tr
@@ -481,7 +455,7 @@ Outlook 2016 = mso 16
                 <td colspan="1" style="line-height: 12px !important; ">&#8226;</td>
                 <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
                 <td colspan="7" style="line-height: 12px !important; font-size: 9px; font-weight: 300;">
-                  Diểm bán hàng
+                  Nhân sự nâng cao*
                 </td>
               </tr>
               <tr
@@ -490,7 +464,7 @@ Outlook 2016 = mso 16
                 <td colspan="1" style="line-height: 12px !important;">&#8226;</td>
                 <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
                 <td colspan="7" style="line-height: 12px !important; font-size: 9px; font-weight: 300;">
-                  Công cụ quản trị nhân sự*
+                  Website và hỗ trợ trực tuyến
                 </td>
               </tr>
               <tr
@@ -499,7 +473,7 @@ Outlook 2016 = mso 16
                 <td colspan="1" style="line-height: 12px !important;">&#8226;</td>
                 <td colspan="1" style="line-height: 12px !important; width: 10px">&nbsp;</td>
                 <td colspan="7" style="line-height: 12px !important; font-size: 9px; font-weight: 300;">
-                  Website hỗ trợ chat trực tuyến
+                  Quản lý Sản xuất
                 </td>
               </tr>
               <tr
@@ -511,19 +485,7 @@ Outlook 2016 = mso 16
                 </td>
                 <td colspan="7"
                     style="mso-line-height-rule:exactly; line-height: 12px !important; font-size: 9px; font-weight: 300;">
-                  Quản trị sản xuất
-                </td>
-              </tr>
-              <tr
-                style="font-size:9px; margin: 0 0 0 0; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0; mso-line-height-rule:exactly; line-height: 12px;">
-                <td colspan="1" style="mso-line-height-rule:exactly; line-height: 12px !important; width: 10px">&nbsp;
-                </td>
-                <td colspan="1" style="mso-line-height-rule:exactly; line-height: 12px !important;">&#8226;</td>
-                <td colspan="1" style="mso-line-height-rule:exactly; line-height: 12px !important; width: 10px">&nbsp;
-                </td>
-                <td colspan="7"
-                    style="mso-line-height-rule:exactly; line-height: 12px !important; font-size: 9px; font-weight: 300;">
-                  Quản lý dự án nâng cao
+                  Quản lý Dự án
                 </td>
               </tr>
             </table>
@@ -537,11 +499,20 @@ Outlook 2016 = mso 16
     </td>
   </tr>
   <tr>
-    <td colspan="1" valign="top" align="center" style="padding: 25px 0 0 0; mso-padding-alt: 25px 0 0 0;">
+    <td colspan="1" valign="top" align="right" style="padding: 5px 10px 0 0; mso-padding-alt: 5px 10px 0 0;">
+
+      <p style="width: 580px; font-size: 9px; font-weight: 300;">
+        *Nhân sự nâng cao bao gồm: Tuyển dụng, Ngày nghỉ, Tăng ca, Tạm ứng nhân viên
+      </p>
+
+    </td>
+  </tr>
+  <tr>
+    <td colspan="1" valign="top" align="center" style="padding: 15px 0 0 0; mso-padding-alt: 15px 0 0 0;">
 
       <p style="width: 580px; color: #ea4a55; font-size: 12px; font-weight: 300;">
-        Bạn có thể tiếp tục tận hưởng những lợi ích của Kiu BMP bằng cách lựa chọn gói tốt nhất
-        cho doanh nghiệp của bạn.
+        Bạn có thể tiếp tục trải nghiệm các tính năng của Kiu BMP bằng cách lựa chọn gói sản phẩm phù hợp nhất với doanh
+        nghiệp của bạn.
       </p>
 
     </td>
@@ -552,8 +523,8 @@ Outlook 2016 = mso 16
 
       <div style="border-radius: 5px; background-color: #ea4a55; width: 160px; height: 45px;">
         <a href="mailto:info@kiuglobal.com"
-           style="color: #ffffff;font-size: 16px; padding:0 0 0 0; mso-padding-alt: 0 0 0 0; text-align: center; text-decoration: none;">
-          Nâng cấp ngay!
+           style="color: #ffffff;font-size: 16px; font-weight: 500; padding:0 0 0 0; mso-padding-alt: 0 0 0 0; text-align: center; text-decoration: none;">
+          Nâng cấp tài khoản
         </a>
       </div>
 
@@ -583,7 +554,7 @@ Outlook 2016 = mso 16
     <td colspan="1" valign="top" align="center" style="padding: 10px 0 15px 0; mso-padding-alt: 10px 0 15px 0;">
 
       <div style="color: #5ab14d; font-size: 11px; font-weight: 400; margin: 0">
-        Cần vốn để thực hiện một đơn đặt hàng khẩn cấp? Không có tài sản thế chấp? Không vấn đề gì.
+        Bạn cần vay vốn để thực hiện gấp một đơn hàng? Bạn không có tài sản đảm bảo? Đừng lo lắng
       </div>
 
     </td>
@@ -592,9 +563,9 @@ Outlook 2016 = mso 16
     <td colspan="1" valign="top" align="left" style="padding: 0 0 15px 0; mso-padding-alt: 0 0 15px 0;">
 
       <div style="font-size: 11px; font-weight: 300; line-height: 0.9rem">
-        Chúng tôi không đặt câu hỏi và yêu cầu bạn điền vào các biểu mẫu dài và phức tạp. Khả năng
-        phân tích dữ liệu mạnh mẽ cho phép chúng tôi cấp vốn cho doanh nghiệp của bạn trong vòng 24 giờ dựa trên các nền
-        tảng kinh doanh của bạn.
+        Kiu không đặt câu hỏi và yêu cầu bạn điền vào các biểu mẫu rườm rà, phức tạp. Chức năng phân tích dữ liệu hiệu
+        quả của Kiu cho phép Kiu cung cấp tài chính cho các doanh nghiệp trong vòng 24 giờ dựa trên cơ sở hoạt động kinh
+        doanh của doanh nghiệp.
       </div>
 
     </td>
@@ -603,7 +574,7 @@ Outlook 2016 = mso 16
     <td colspan="1" valign="top" align="left" style="padding: 0 0 15px 0; mso-padding-alt: 0 0 15px 0;">
 
       <div style="font-size: 11px; font-weight: 300; line-height: 0.9rem">
-        Tiếp cận nhanh nguồn vốn lưu động khi cần nhất với Kiu Loan.
+        Hãy nhận hỗ trợ tài chính một cách nhanh chóng cùng với Kiu Loan.
       </div>
 
     </td>
@@ -614,7 +585,8 @@ Outlook 2016 = mso 16
 
       <div style="border-radius: 5px; background-color: #5ab14d; width: 160px; height: 45px;">
         <a href="https://www.kiuglobal.com/"
-           style="color: #ffffff;font-size: 16px; padding:0 0 0 0; mso-padding-alt: 0 0 0 0; text-align: center; text-decoration: none;">Tìm hiểu thêm
+           style="color: #ffffff;font-size: 16px; font-weight: 500; padding:0 0 0 0; mso-padding-alt: 0 0 0 0; text-align: center; text-decoration: none;">Tìm
+          hiểu thêm
         </a>
       </div>
 
