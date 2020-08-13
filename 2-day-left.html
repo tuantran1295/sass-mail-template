@@ -165,14 +165,14 @@ Outlook 2016 = mso 16
   <tr>
     <td style="width: 100%; padding: 0 0 30px 0; mso-padding-alt: 0 0 30px 0;">
       <div style="font-size: 16px; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0;">
-        Dear [Customer Name],
+        Dear ${object.partner_id.name},
       </div>
     </td>
   </tr>
   <tr>
     <td style="width: 100%; padding: 0 0 15px 0; mso-padding-alt: 0 0 15px 0;">
       <div style="font-size: 12px; padding: 0 0 0 0; mso-padding-alt: 0 0 0 0;">
-        Your Kiu free trial account will expire on (insert date). We hope you are happy with our product and enjoying
+        Your Kiu free trial account will expire on ${object.expiration_datetime.split()[0]}. We hope you are happy with our product and enjoying
         its benefits. Don't worry, you still have 2 days left in your free trial account. But after this period, your
         account including all data in the system will be deleted.
       </div>
